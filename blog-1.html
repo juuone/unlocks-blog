@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memahami Sistem Tiering di unlocks.top — Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #171717; }
+    </style>
+</head>
+<body class="antialiased min-h-screen">
+
+    
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 backdrop-blur-md border-b border-neutral-100 bg-white/80">
+        <div class="max-w-3xl mx-auto px-4 h-14 flex items-center justify-between gap-3">
+            <a href="index.html" class="flex items-center gap-2 group shrink-0">
+                <img src="icon.svg" alt="unlocks.top logo" class="w-6 h-6 object-contain">
+                <span class="font-semibold tracking-tight text-neutral-900 text-xs">UNLOCKS.TOP</span>
+                <span class="text-[10px] font-medium bg-neutral-100 text-neutral-500 px-1.5 py-0.2 rounded">Blog</span>
+            </a>
+            <nav class="flex items-center gap-3 text-[11px] font-medium overflow-x-auto">
+                <a href="https://about.unlocks.top/" class="text-neutral-500 hover:text-neutral-900 transition-colors">About</a>
+                <a href="https://about.unlocks.top/advertise.html" class="text-neutral-500 hover:text-neutral-900 transition-colors">Advertise</a>
+                <a href="index.html" class="text-neutral-900 font-semibold">Blog</a>
+                <a href="https://support.unlocks.top" class="text-neutral-500 hover:text-neutral-900 transition-colors">Support</a>
+                <a href="https://legal.unlocks.top" class="text-neutral-500 hover:text-neutral-900 transition-colors">Legal</a>
+                <a href="https://unlocks.top" class="bg-neutral-900 text-white px-2.5 py-1.5 rounded hover:bg-neutral-800 transition-all shrink-0">Dashboard</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="max-w-2xl mx-auto px-4 py-3">
+    <!-- Breadcrumb & Top Navigation Row -->
+<div class="flex items-center justify-between border-b border-neutral-100 pb-3 mb-8 text-[11px] font-medium text-neutral-400">
+    <!-- Left Side: Breadcrumb Links -->
+    <div class="flex items-center gap-1.5">
+        <a href="index.html" class="hover:text-neutral-900 transition-colors">Blog</a>
+        <svg class="w-2.5 h-2.5 text-neutral-300 shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg>
+        <a href="index.html" class="hover:text-neutral-900 transition-colors">Artikel</a>
+        <svg class="w-2.5 h-2.5 text-neutral-300 shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg>
+        <span class="text-neutral-900 font-semibold truncate max-w-[180px] sm:max-w-none">Membaca Panduan</span>
+    </div>
+
+    <!-- Right Side: Quick Action (Share/Copy Link) -->
+    <button onclick="navigator.clipboard.writeText(window.location.href); alert('Link artikel berhasil disalin!');" class="flex items-center gap-1 hover:text-neutral-900 transition-colors cursor-pointer group">
+        <svg class="w-3 h-3 transform group-hover:scale-105 transition-transform" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935-2.186 2.25 2.25 0 00-3.935 2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z" />
+        </svg>
+        <span class="hidden sm:inline">Bagikan</span>
+    </button>
+</div>
+
+        <header class="mb-8">
+            <div class="inline-block text-[10px] font-semibold text-neutral-900 bg-neutral-100 px-2 py-0.5 rounded mb-2">PANDUAN UTAMA</div>
+            <h1 class="text-2xl sm:text-3xl font-bold tracking-tight text-neutral-950 mb-4 leading-tight">
+                Memahami Sistem Tiering di unlocks.top: Akumulasi Klik & Bonus hingga +30%
+            </h1>
+            
+            <div class="flex items-center gap-3 py-3 border-y border-neutral-100">
+                <img src="user.png" alt="Juan Fernando" class="w-7 h-7 rounded-full bg-neutral-100 object-cover">
+                <div>
+                    <div class="text-xs font-semibold text-neutral-900">Juan Fernando</div>
+                    <div class="text-[10px] text-neutral-400">Diterbitkan pada 11 Juli 2026 &bull; 5 menit membaca</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Article Content -->
+        <article class="text-neutral-700 space-y-4 text-[13px] leading-relaxed">
+            <p>
+                Di platform <span class="font-medium text-neutral-900">unlocks.top</span>, kami berkomitmen untuk membangun ekosistem monetisasi yang transparan, stabil, dan menguntungkan bagi para kreator. Kami menghargai loyalitas dan pertumbuhan volume trafik Anda melalui sistem berbasis <strong>Bonus Pencapaian Klik (Milestone Bonus)</strong> yang ditambahkan langsung di atas nilai dasar flat CPM Anda.
+            </p>
+            
+            <p>
+                Setiap akun dihitung dari <strong>Flat CPM Dasar senilai Rp7.500 per 1.000 klik valid</strong>. Seiring bertambahnya akumulasi jumlah klik pada tautan Sub2Unlock Anda, sistem kami akan mendistribusikan peningkatan persentase bonus berdasarkan tingkatan berikut:
+            </p>
+
+            <h3 class="text-sm font-bold text-neutral-950 pt-2 tracking-tight">Tabel Struktur Pembagian Tiering Bonus</h3>
+            
+            <div class="overflow-x-auto border border-neutral-200 rounded-md my-2">
+                <table class="w-full text-left border-collapse text-[11px]">
+                    <thead>
+                        <tr class="bg-neutral-50 border-b border-neutral-200 text-neutral-600 font-medium">
+                            <th class="p-2.5">Nama Tier</th>
+                            <th class="p-2.5">Target Klik Valid / Bulan</th>
+                            <th class="p-2.5">Persentase Bonus</th>
+                            <th class="p-2.5">Estimasi Pendapatan / 1K Klik</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-neutral-100 text-neutral-700">
+                        <tr>
+                            <td class="p-2.5 font-medium">Basic</td>
+                            <td class="p-2.5">0+ klik</td>
+                            <td class="p-2.5 text-neutral-500">+0% Bonus</td>
+                            <td class="p-2.5 font-medium text-neutral-900">Rp7.500 (Base Flat)</td>
+                        </tr>
+                        <tr>
+                            <td class="p-2.5 font-medium text-blue-600">Silver</td>
+                            <td class="p-2.5">10.000+ klik</td>
+                            <td class="p-2.5 text-blue-600 font-semibold">+10% Bonus</td>
+                            <td class="p-2.5 font-medium text-neutral-900">Rp8.250</td>
+                        </tr>
+                        <tr>
+                            <td class="p-2.5 font-medium text-amber-600">Gold</td>
+                            <td class="p-2.5">50.000+ klik</td>
+                            <td class="p-2.5 text-amber-600 font-semibold">+20% Bonus</td>
+                            <td class="p-2.5 font-medium text-neutral-900">Rp9.000</td>
+                        </tr>
+                        <tr>
+                            <td class="p-2.5 font-medium text-purple-600">Platinum</td>
+                            <td class="p-2.5">100.000+ klik</td>
+                            <td class="p-2.5 text-purple-600 font-semibold">+30% Bonus</td>
+                            <td class="p-2.5 font-medium text-neutral-900">Rp9.750</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="text-[11px] text-neutral-500 italic flex items-start gap-1.5 bg-neutral-50 p-2.5 rounded border border-neutral-100">
+                <svg class="w-3.5 h-3.5 text-neutral-400 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 111.063.852l-.708 2.836a.75.75 0 001.063.852l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
+                </svg>
+                <span><strong class="not-italic text-neutral-700">Catatan penting:</strong> tier <strong>tidak</strong> naik secara instan begitu Anda menembus kuota klik. Sistem kami menghitung total klik valid Anda selama satu bulan kalender penuh terlebih dahulu, dan tier hasil perhitungan tersebut baru aktif otomatis di bulan berikutnya. Tidak perlu klaim manual — semuanya berjalan otomatis, hanya saja dengan jeda satu bulan.</span>
+            </p>
+
+            <h3 class="text-sm font-bold text-neutral-950 pt-2 tracking-tight">Cara Kerja Sistem Tiering per Bulan</h3>
+            <p>
+                Ini yang paling sering bikin bingung, jadi kami tekankan di sini: <strong>klik yang Anda kumpulkan bulan ini akan menentukan tier Anda di bulan depan — bukan hari itu juga.</strong> Kami perlu menghitung total klik valid Anda selama satu bulan penuh dulu, baru bisa menentukan tier yang paling sesuai. Alurnya seperti berikut:
+            </p>
+            <ol class="list-decimal list-inside space-y-1.5 pl-1">
+                <li><strong class="text-neutral-900">Bulan berjalan</strong> — Anda mendapatkan klik seperti biasa, semua klik valid dikumpulkan dan dihitung sistem.</li>
+                <li><strong class="text-neutral-900">Bulan berikutnya</strong> — begitu bulan sebelumnya selesai, sistem melihat total klik valid Anda di bulan itu dan otomatis memberikan tier yang sesuai. Tier ini berlaku sepanjang bulan berikutnya tersebut.</li>
+                <li><strong class="text-neutral-900">Bulan setelahnya lagi</strong> — sistem mengevaluasi ulang, apakah di bulan sebelumnya Anda tetap mencapai jumlah klik yang sama atau lebih tinggi:
+                    <ul class="list-disc list-inside pl-4 mt-1 space-y-1">
+                        <li><strong>Ya</strong> → tier Anda diperpanjang lagi (atau naik, jika klik makin banyak).</li>
+                        <li><strong>Tidak</strong> → tier Anda kembali ke Basic.</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <div class="bg-neutral-50 border border-neutral-100 rounded-md p-3 mt-3">
+                <p class="font-semibold text-neutral-900 mb-1.5">Contoh Sederhana</p>
+                <p class="mb-1.5">Misalnya Anda berhasil mengumpulkan 10.000 klik valid selama bulan <strong>Juni</strong>:</p>
+                <ul class="list-disc list-inside space-y-1">
+                    <li>Sepanjang bulan Juni, Anda belum menerima bonus apa pun.</li>
+                    <li>Begitu masuk bulan <strong>Juli</strong>, Anda otomatis mendapatkan tier <strong>Silver</strong> dan bonus +10% aktif sepanjang bulan Juli.</li>
+                    <li>Jika di bulan Juli Anda tetap mengumpulkan 10.000 klik atau lebih, maka di bulan <strong>Agustus</strong> tier Silver Anda dipertahankan (atau naik ke tier lebih tinggi jika kliknya bertambah).</li>
+                    <li>Namun jika di bulan Juli klik valid Anda turun di bawah 10.000, maka di bulan Agustus tier Anda akan kembali ke Basic.</li>
+                </ul>
+            </div>
+
+            <h4 class="text-xs font-bold text-neutral-950 pt-2">Yang Perlu Diingat</h4>
+            <ul class="list-disc list-inside space-y-1">
+                <li>Tier dihitung berdasarkan bulan kalender penuh, bukan 30 hari berjalan sejak Anda mencapai target.</li>
+                <li>Tidak ada upgrade instan di tengah bulan — pencapaian Anda bulan ini akan terlihat hasilnya di bulan depan.</li>
+                <li>Selama tier aktif, Anda tetap perlu terus mengumpulkan klik valid agar tier tidak turun di bulan berikutnya.</li>
+            </ul>
+
+            <h3 class="text-sm font-bold text-neutral-950 pt-2 tracking-tight">Keuntungan Skema Berjenjang bagi Publisher</h3>
+            <p>
+                Dengan sistem penambahan persentase yang transparan dan akurat ini, para kreator berskala besar (terutama di sektor <em>file sharing</em> dan <em>gaming patch publisher</em>) dapat memproyeksikan pendapatan bulanan mereka dengan jauh lebih presisi tanpa khawatir fluktuasi harga pasar global yang tidak menentu.
+            </p>
+
+            <div class="space-y-3 pt-2">
+                <div class="flex items-start gap-2.5">
+                    <div class="bg-neutral-900 rounded p-1 text-white shrink-0 mt-0.5">
+                        <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="font-semibold text-neutral-900">Transparansi Finansial:</span> Nilai rate dasar terkunci aman dan stabil, sehingga bonus tier menjadi tambahan murni di atas penghasilan flat Anda.
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-2.5">
+                    <div class="bg-neutral-900 rounded p-1 text-white shrink-0 mt-0.5">
+                        <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="font-semibold text-neutral-900">Sistem Tracking Anti-Spam:</span> Setiap konversi klik organik audiens Anda dihitung secara presisi untuk memastikan tidak ada trafik valid yang terlewat.
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-2.5">
+                    <div class="bg-neutral-900 rounded p-1 text-white shrink-0 mt-0.5">
+                        <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="font-semibold text-neutral-900">Penarikan Dana Cepat & Terpercaya:</span> Didukung oleh ribuan publisher aktif dengan reputasi sistem pembayaran yang bersih, aman, dan tanpa potongan tersembunyi.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Click Action / CTA Section -->
+            <div class="pt-6 border-t border-neutral-100 mt-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                <div>
+                    <h4 class="text-xs font-semibold text-neutral-900">Siap mengoptimalkan pendapatan tautan Anda?</h4>
+                    <p class="text-[11px] text-neutral-400">Mulai bangun trafik Anda dan capai tier tertinggi hari ini.</p>
+                </div>
+                <a href="https://unlocks.top/" class="inline-flex items-center justify-center bg-neutral-900 text-white text-[11px] font-medium px-4 py-2 rounded hover:bg-neutral-800 transition-all shrink-0 shadow-sm group">
+                    Buka Dashboard Sekarang
+                    <svg class="w-3 h-3 ml-1.5 transform group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                    </svg>
+                </a>
+            </div>
+            
+        </article>
+
+    </main>
+
+    
+    <!-- Footer -->
+    <footer class="bg-neutral-950 text-white mt-10">
+        <div class="max-w-3xl mx-auto px-4 py-12 grid grid-cols-2 sm:grid-cols-3 gap-8">
+            <div>
+                <h4 class="mb-3 font-mono text-[10px] uppercase tracking-widest text-neutral-500 font-semibold">Quick Links</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="https://about.unlocks.top/" class="text-neutral-400 hover:text-white transition-colors">Tentang</a></li>
+                    <li><a href="https://support.unlocks.top/faq.html" class="text-neutral-400 hover:text-white transition-colors">FAQ</a></li>
+                    <li><a href="index.html" class="text-neutral-400 hover:text-white transition-colors">Blog</a></li>
+                    <li><a href="https://support.unlocks.top" class="text-neutral-400 hover:text-white transition-colors">Support</a></li>
+                    <li><a href="https://about.unlocks.top/advertise.html" class="text-neutral-400 hover:text-white transition-colors">Advertise</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="mb-3 font-mono text-[10px] uppercase tracking-widest text-neutral-500 font-semibold">Legal</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="https://legal.unlocks.top/privacy.html" class="text-neutral-400 hover:text-white transition-colors">Privacy</a></li>
+                    <li><a href="https://legal.unlocks.top/terms.html" class="text-neutral-400 hover:text-white transition-colors">Terms</a></li>
+                    <li><a href="https://legal.unlocks.top/disclaimer.html" class="text-neutral-400 hover:text-white transition-colors">Disclaimer</a></li>
+                    <li><a href="https://legal.unlocks.top/dmca.html" class="text-neutral-400 hover:text-white transition-colors">DMCA</a></li>
+                    <li><a href="https://legal.unlocks.top/cookie-policy.html" class="text-neutral-400 hover:text-white transition-colors">Cookie Policy</a></li>
+                </ul>
+            </div>
+            <div class="col-span-2 sm:col-span-1">
+                <h4 class="mb-3 font-mono text-[10px] uppercase tracking-widest text-neutral-500 font-semibold">Kontak</h4>
+                <ul class="space-y-2.5 text-xs text-neutral-400">
+                    <li><a href="mailto:support@unlocks.top" class="hover:text-white transition-colors break-all">support@unlocks.top</a></li>
+                    <li>Senin&ndash;Sabtu, 09:00&ndash;21:00 WIB</li>
+                    <li class="text-neutral-500">Jakarta, Indonesia</li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-neutral-800">
+            <div class="max-w-3xl mx-auto px-4 py-4 flex flex-wrap justify-between items-center gap-2 text-[11px] text-neutral-500">
+                <span>&copy; 2026 UNLOCKS.TOP</span>
+                <span>Made in Jakarta, Indonesia</span>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
